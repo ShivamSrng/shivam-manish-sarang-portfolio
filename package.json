@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ShivamSrng.github.io/shivam-manish-sarang-portfolio/",
   "name": "improvised-shivam-sarang-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
