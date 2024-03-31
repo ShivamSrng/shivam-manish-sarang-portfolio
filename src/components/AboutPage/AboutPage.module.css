@@ -1,0 +1,374 @@
+.aboutPage {
+  padding: 2vw 0vw;
+  height: 100vh;
+  width: 100%;
+  background-color: #EFEAE3;
+  position: relative;
+}
+
+.movingText {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.movingText::-webkit-scrollbar {
+  display: none;
+}
+
+.textContainer {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move 20s linear infinite;
+}
+
+.movingText h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+
+.orangeCircle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #FE320A;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.informationSection {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 2vw;
+  gap: 2vw;
+  position: relative;
+  z-index: 9;
+}
+
+.pastInfoContainer {
+  display: flex;
+  padding: 2vw 2vw;
+  gap: 2vw;
+  height: 100%;
+  width: 72%;
+  background-color: rgb(31, 27, 27);
+  border-radius: 20px;
+}
+
+.orangeText {
+  color: #FE320A;
+}
+
+.imageContainer {
+  width: calc(100% - 72%);
+}
+
+.imageContainer img {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.imageContainer .redText {
+  color: red;
+}
+
+.slider {
+  width: 25%;
+  height: 100%;
+  padding: 1vw 1vw;
+  line-height: 4.5vw;
+}
+
+.slider a {
+  text-decoration: none;
+}
+
+.slider a h1 {
+  color: rgb(148, 147, 147);
+  font-size: 2.5vw;
+}
+
+.slider a:nth-child(1) h1 {
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+
+.data {
+  width: 100%;
+  height: 100%;
+  padding: 2vw 2vw;
+  background-color: #EFEAE3;
+  overflow-y: auto;
+  border-radius: 20px;
+}
+
+.data::-webkit-scrollbar {
+  display: none;
+}
+
+.education{
+  width: 100%;
+  margin-bottom: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 2px solid rgb(162, 157, 157);
+}
+
+.course {
+  font-size: 2.5vw;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 0.5vw;
+}
+
+.university {
+  font-size: 1.5vw;
+}
+
+.graduationDate {
+  font-size: 1.1vw;
+}
+
+.gpa {
+  font-size: 1vw;
+}
+
+.courseworkIntro {
+  font-size: 1.2vw;
+  font-weight: 800;
+}
+
+.courses {
+  font-size: 1.1vw;
+}
+
+.experienceContainer {
+  width: 100%;
+  display: none;
+}
+
+.experienceContainer h1 {
+  font-size: 2.5vw;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 1.1vw;
+}
+
+.experienceInfo p {
+  width: 100%;
+  font-size: 1vw;
+  margin-bottom: 0.9vw;
+}
+
+.gooey {
+  height: 28vw;
+  width: 30vw;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #FE320A, #FF671B);
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  filter: blur(20px);
+  animation: gooey 6s ease-in-out infinite alternate;
+}
+
+@keyframes gooey {
+  from {
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+@media (max-width: 376px)  { 
+  .orangeCircle {
+    height: 22px;
+    width: 22px;
+  }
+
+  .informationSection {
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30vw;
+  }
+
+  .imageContainer {
+    padding-top: 25vw;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  .pastInfoContainer {
+    padding: 2vw 2vw;
+    flex-direction: column;
+    gap: 2vw;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 27, 27);
+    border-radius: 20px;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+  }
+
+  .slider a h1 {
+    padding-left: 3vw;
+    font-size: 5.2vw;
+  }
+
+  .data {
+    height: 76vw;
+    padding: 4vw 4vw;
+    overflow-y: scroll;
+  }
+
+  .course {
+    font-size: 5vw;
+  }
+  
+  .university {
+    font-size: 4.5vw;
+  }
+  
+  .graduationDate {
+    font-size: 3.5vw;
+  }
+  
+  .gpa {
+    font-size: 3.2vw;
+  }
+  
+  .courseworkIntro {
+    font-size: 5vw;
+  }
+  
+  .courses {
+    font-size: 4vw;
+  }
+
+  .experienceContainer h1 {
+    font-size: 5vw;
+  }
+  
+  .experienceInfo p {
+    font-size: 4vw;
+    padding-bottom: 2vw;
+  }
+}
+
+/* smartphones, portrait iPhone, portrait 375 phones (Android) */
+@media (min-width:376px) and (max-width: 479px)  { 
+  .orangeCircle {
+    height: 22px;
+    width: 22px;
+  }
+
+  .informationSection {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30vw;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .imageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  .pastInfoContainer {
+    padding: 2vw 2vw;
+    flex-direction: column;
+    gap: 2vw;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 27, 27);
+    border-radius: 20px;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+  }
+
+  .slider a h1 {
+    padding-left: 3vw;
+    font-size: 5.2vw;
+  }
+
+  .data {
+    height: 83vw;
+    padding: 4vw 4vw;
+    overflow-y: scroll;
+  }
+
+  .course {
+    font-size: 5vw;
+  }
+  
+  .university {
+    font-size: 4.5vw;
+  }
+  
+  .graduationDate {
+    font-size: 3.5vw;
+  }
+  
+  .gpa {
+    font-size: 3.2vw;
+  }
+  
+  .courseworkIntro {
+    font-size: 5vw;
+  }
+  
+  .courses {
+    font-size: 4vw;
+  }
+
+  .experienceContainer h1 {
+    font-size: 5vw;
+  }
+  
+  .experienceInfo p {
+    font-size: 4vw;
+    padding-bottom: 2vw;
+  }
+}

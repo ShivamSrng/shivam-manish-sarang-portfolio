@@ -1,0 +1,313 @@
+.contactPage {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.profileImg {
+  width: 10vw;
+  height: 19vh;
+  border: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.purpleText {
+  color: purple;
+}
+
+.orangeRedText {
+  color: orangered;
+}
+
+.contactPage .artisticText {
+  padding: 0vw 2vw;
+  padding-top: 5vw;
+  font-size: 4vw;
+  border-bottom: 2px solid white;
+}
+
+.gooeyContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.gooey1 {
+  height: 40vw;
+  width: 80vw;
+  top: -40%;
+  left: -10%;
+  background: linear-gradient(#FE320A, #FE3F0A);
+  border-radius: 50%;
+  filter: blur(35px);
+  position: absolute;
+  animation: anime2 8s linear infinite alternate;
+}
+
+.gooey2 {
+  height: 60vw;
+  width: 60vw;
+  left: 55%;
+  top: -70%;
+  background: linear-gradient(#FE320A, #FE3F0A);
+  border-radius: 50%;
+  filter: blur(35px);
+  position: absolute;
+  animation: anime2 5s linear infinite alternate;
+  
+}
+
+.gooey3 {
+  height: 50vw;
+  width: 50vw;
+  left: 30%;
+  top: -40%;
+  background: linear-gradient(#FE320A, #FE3F0A);
+  border-radius: 50%;
+  filter: blur(35px);
+  position: absolute;
+  animation: anime1 4s linear infinite alternate;
+}
+
+
+@keyframes anime1 {
+  from {
+    transform: translate(5%, -3%);
+  }
+  to {
+    transform: translate(0%, 5%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-5%, 2%);
+  }
+}
+
+.socialSection {
+  padding: 2vw 2vw;
+  font-size: 1.5vw;
+  line-height: 3vw;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2vw;
+}
+
+.icon {
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+}
+
+.individualIcon {
+  margin-right: 0.4vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2vw 2vw;
+  padding-bottom: 2vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
+
+@media (max-width: 375px)  {
+  .profileImg {
+    width: 19vh;
+    height: 19vh;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .contactPage .artisticText {
+    padding: 5vw 5vw;
+    padding-top: 10vw;
+    font-size: 4vw;
+    border-bottom: 2px solid white;
+  }
+
+  .gooey1 {
+    height: 40vw;
+    width: 80vw;
+    top: -10%;
+    left: -10%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime2 3s linear infinite alternate;
+  }
+  
+  .gooey2 {
+    height: 60vw;
+    width: 60vw;
+    left: 55%;
+    top: 0%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime2 2s linear infinite alternate;
+    
+  }
+  
+  .gooey3 {
+    height: 80vw;
+    width: 50vw;
+    left: 30%;
+    top: -1%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime1 4s linear infinite alternate;
+  }
+
+  .socialSection {
+    padding: 5vw 5vw;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  
+  .info {
+    padding-bottom: 5vw;
+  }
+
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+  }
+  
+  .icon {
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .individualIcon {
+    margin-right: 0.4vw;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2vw 5vw;
+    padding-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width:375px) and (max-width: 479px)  {
+  .profileImg {
+    width: 19vh;
+    height: 19vh;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .contactPage .artisticText {
+    padding: 5vw 5vw;
+    padding-top: 10vw;
+    font-size: 4vw;
+    border-bottom: 2px solid white;
+  }
+
+  .gooey1 {
+    height: 40vw;
+    width: 80vw;
+    top: -10%;
+    left: -10%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime2 3s linear infinite alternate;
+  }
+  
+  .gooey2 {
+    height: 60vw;
+    width: 60vw;
+    left: 55%;
+    top: 0%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime2 2s linear infinite alternate;
+    
+  }
+  
+  .gooey3 {
+    height: 80vw;
+    width: 50vw;
+    left: 30%;
+    top: -1%;
+    background: linear-gradient(#FE320A, #FE3F0A);
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    animation: anime1 4s linear infinite alternate;
+  }
+
+  .socialSection {
+    padding: 5vw 5vw;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  
+  .info {
+    padding-bottom: 5vw;
+  }
+
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+  }
+  
+  .icon {
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .individualIcon {
+    margin-right: 0.4vw;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2vw 5vw;
+    padding-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+  }
+}

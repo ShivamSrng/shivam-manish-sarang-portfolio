@@ -1,0 +1,184 @@
+.problemSpotlight {
+  padding: 4vw 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #EFEAE3;
+  overflow-x: hidden;
+}
+
+.fixedImage {
+  height: 20vw;
+  width: 30vw;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #0000003c;
+  border: 2px solid #0000003c;
+  position: fixed;
+  z-index: 9;
+  left: 60%;
+  top: 30%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.imageHolder {
+  display: none;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orangeCircle {
+  width: 20px;
+  height: 20px;
+  background-color: orangered;
+  border-radius: 50%;
+  margin: 0vw 1vw;
+}
+
+.title h1 {
+  font-size: 4vw;
+}
+
+.problem {
+  height: 150px;
+  width: 100%;
+  border-bottom: 1px solid rgb(152, 152, 152);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 2vw;
+  position: relative;
+}
+
+.problem h2 {
+  font-size: 2.5vw;
+  position: relative;
+  z-index: 9;
+}
+
+.problem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 140, 0);
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.2s;
+}
+
+.problem:hover .overlay {
+  top: 0;
+}
+
+@media (max-width: 375px)  {
+  .orangeCircle {
+    width: 25px;
+    height: 25px;
+    margin: 0vw 3vw;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 6vw;
+  }
+  
+  .problemSpotlightContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 4vw 2vw;
+  }
+  
+  .problem {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: none;
+    border-radius: 20px;
+    color: black;
+    align-items: flex-start;
+  }
+
+  .imageHolder {
+    display: block;
+    padding: 2vw 0vw;
+    width: 100%;
+  }
+
+  .imageHolder img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  .problem h2 {
+    padding-bottom: 4vw;
+    padding-left: 2vw;
+    font-size: 4.8vw;
+  }
+}
+
+/* smartphones, portrait iPhone, portrait 375 phones (Android) */
+@media (min-width:375px) and (max-width: 479px)  {
+  .orangeCircle {
+    width: 25px;
+    height: 25px;
+    margin: 0vw 3vw;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 6vw;
+  }
+  
+  .problemSpotlightContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding: 4vw 2vw;
+  }
+  
+  .problem {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    border-bottom: none;
+    border-radius: 20px;
+    color: black;
+    align-items: flex-start;
+  }
+
+  .imageHolder {
+    display: block;
+    padding: 2vw 0vw;
+    width: 100%;
+  }
+
+  .imageHolder img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  .problem h2 {
+    padding-bottom: 4vw;
+    padding-left: 2vw;
+    font-size: 4.8vw;
+  }
+}
