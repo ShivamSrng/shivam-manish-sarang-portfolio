@@ -1,6 +1,6 @@
 .aboutPage {
   padding: 2vw 0vw;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: #EFEAE3;
   position: relative;
@@ -8,6 +8,7 @@
 
 .movingText {
   position: relative;
+  height: 20vh;
   white-space: nowrap;
   overflow-x: auto;
 }
@@ -50,7 +51,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 8vw;
   padding: 2vw 2vw;
   gap: 2vw;
   position: relative;
@@ -61,7 +61,7 @@
   display: flex;
   padding: 2vw 2vw;
   gap: 2vw;
-  height: 100%;
+  height: 72vh;
   width: 72%;
   background-color: rgb(31, 27, 27);
   border-radius: 20px;
@@ -111,7 +111,7 @@
   height: 100%;
   padding: 2vw 2vw;
   background-color: #EFEAE3;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-radius: 20px;
 }
 
@@ -200,7 +200,7 @@
   }
 
   .informationSection {
-    height: 175vw;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -291,8 +291,12 @@
     width: 22px;
   }
 
+  .movingText {
+    height: 20vh;
+  }
+
   .informationSection {
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
