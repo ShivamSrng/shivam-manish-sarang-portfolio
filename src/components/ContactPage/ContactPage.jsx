@@ -7,7 +7,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import ProfileImg from '/assets/images/profile.ico';
+import ProfileImg from '/assets/images/profile.png';
 
 function ContactPage() {
   var [date,setDate] = useState(new Date());
